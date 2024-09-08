@@ -47,9 +47,9 @@
 		default_layer {
 			label = "Alpha";
 			bindings = <
-			&kp Y &kp C &kp L &kp M &kp K           &kp Z &kp F  &kp U     &kp COMMA  &kp APOSTROPHE
-			&mt LG(I) &mt LA(S) &kp LS(R) &kp LC(T) &kp G           &kp P &kp RC(N)  &kp RS(A)     &kp RA(A) &kp RG(O)
-			&kp Q &kp V &kp W &kp D &kp J           &kp B &kp H  &kp SLASH &kp DOT &kp X
+			&kp Y &kp C &kp L &kp M &kp K                       &kp Z &kp F  &kp U     &kp COMMA  &kp APOSTROPHE
+			&mt LG(I) &mt LA(S) &mt LS(R) &mt LC(T) &kp G       &kp P &mt RC(N)  &mt RS(A)     &mt RA(A) &mt RG(O)
+			&kp Q &kp V &kp W &kp D &kp J                       &kp B &kp H  &kp SLASH &kp DOT &kp X
 							&kp TAB &kp RET           &kp SPACE &kp
 			>;
 		};
