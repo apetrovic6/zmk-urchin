@@ -55,15 +55,15 @@
 		};
 
 
-		accent_layer {
-			label = "Accent";
-			bindings = <
-			&none &none &none  &none &none                         &none &none &none &none &none
-			&none &none &none &none &none                            &none &none &none &none &none &none
-			&none &none &none &none &none                         &none &none &none &none &none
-									&none &none                         &none &none 
-			>;
-		};
+//		accent_layer {
+//			label = "Accent";
+//			bindings = <
+//			&none &none &none  &none &none                         &none &none &none &none &none
+//			&none &none &none &none &none                            &none &none &none &none &none &none
+//			&none &none &none &none &none                         &none &none &none &none &none
+//									&none &none                         &none &none
+//			>;
+//		};
 
 		// Used to change the keyboard's settings.
 		settings_layer {
