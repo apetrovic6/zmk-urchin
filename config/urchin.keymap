@@ -24,22 +24,21 @@
 	ignore-modifiers;
 };
 
+// Using layer taps on thumbs, having quick tap as well helps w/ repeating space/backspace
+&lt { quick-tap-ms = <200>; };
 
 / {
-	behaviors {
-		// Enables holding the first mod-tap key
-		// by performing a tap-release-hold sequence.
-		// To use it: "&qt KEYCODE1 KEYCODE2"
-		qt: quick_tap {
-			compatible = "zmk,behavior-hold-tap";
-			label = "QUICK_TAP";
-			#binding-cells = <2>;
-			flavor = "hold-preferred";
-			tapping-term-ms = <200>;
-			quick-tap-ms = <200>;
-			bindings = <&kp>, <&kp>;
-		};
-	};
+    behaviors {
+        hm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+    };
+
+/ {
 
 	keymap {
 		compatible = "zmk,keymap";
@@ -48,7 +47,7 @@
 			label = "Alpha";
 			bindings = <
 			&kp Y &kp C &kp L &kp M &kp K                       &kp Z &kp F  &kp U     &kp COMMA  &kp APOSTROPHE
-			&mt LG(I) &mt LA(S) &mt LS(R) &mt LC(T) &kp G       &kp P &mt RC(N)  &mt RS(A)     &mt RA(A) &mt RG(O)
+			&hm LG(I) &hm LA(S) &hm LS(R) &hm LC(T) &kp G       &kp P &hm RC(N)  &hm RS(A)     &hm RA(A) &hm RG(O)
 			&kp Q &kp V &kp W &kp D &kp J                       &kp B &kp H  &kp SLASH &kp DOT &kp X
 							&kp TAB &kp RET           &kp SPACE &kp
 			>;
