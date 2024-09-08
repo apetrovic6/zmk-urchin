@@ -12,11 +12,11 @@
 
 // Layer definitions
 #define ALPHA 0
-#define SYM 1
-#define NAV 2
-#define NUMFN 3
-#define UTIL 4
-#define SETTINGS 6
+//#define SYM 1
+//#define NAV 2
+//#define NUMFN 3
+//#define UTIL 4
+//#define SETTINGS 6
 // -----------------
 
 &sk {
@@ -50,7 +50,7 @@
 			&kp Y &kp C &kp L &kp M &kp K           &kp Z &kp F  &kp U     &kp COMMA  &kp APOSTROPHE
 			&mt LG(I) &mt LA(S) &kp LS(R) &kp LC(T) &kp G           &kp P &kp RC(N)  &kp RS(A)     &kp RA(A) &kp RG(O)
 			&kp Q &kp V &kp W &kp D &kp J           &kp B &kp H  &kp SLASH &kp DOT &kp X
-							&lt SYM TAB &lt NUMFN RET           &lt NAV SPACE &lt ESC UTIL
+							&kp TAB &kp RET           &kp SPACE &kp
 			>;
 		};
 
@@ -65,15 +65,15 @@
 //			>;
 //		};
 
-		// Used to change the keyboard's settings.
-		settings_layer {
-				label = "Sett.";
-				bindings = <
-				&bootloader &none &none &bt BT_CLR &bt BT_SEL 0               &bt BT_SEL 3 &none &none &none &bootloader
-				&none &none &none &none      &bt BT_SEL 1 						  &bt BT_SEL 4 &none &none &none &none
-				&none &none &none &none      &bt BT_SEL 2               &bt BT_SEL 5 &none &none &none &none
-										&none &none                         &none &none 
-				>;
-		};
+//		// Used to change the keyboard's settings.
+//		settings_layer {
+//				label = "Sett.";
+//				bindings = <
+//				&bootloader &none &none &bt BT_CLR &bt BT_SEL 0               &bt BT_SEL 3 &none &none &none &bootloader
+//				&none &none &none &none      &bt BT_SEL 1 						  &bt BT_SEL 4 &none &none &none &none
+//				&none &none &none &none      &bt BT_SEL 2               &bt BT_SEL 5 &none &none &none &none
+//										&none &none                         &none &none
+//				>;
+//		};
 	};
 };
