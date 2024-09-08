@@ -91,7 +91,7 @@
 			bindings = <
 			&kp Y &kp C &kp L &kp M &kp K           &kp Z &kp F  &kp U     &kp COMMA  &kp APOSTROPHE
 			&kp I &kp S &kp R &kp T &kp G           &kp P &kp E  &kp A     &kp A &kp O
-			&kp Q &kp V &kp W &kp D &kp J           &kp B &kp H  &kp SLASh &kp DOT &kp X
+			&kp Q &kp V &kp W &kp D &kp J           &kp B &kp H  &kp SLASH &kp DOT &kp X
 							&mo EXT &qt LSHIFT SPACE           &kp SPACE &sl SYM
 			>;
 		};
