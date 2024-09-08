@@ -38,8 +38,6 @@
         };
     };
 
-/ {
-
 	keymap {
 		compatible = "zmk,keymap";
 		// Base alpha layer
