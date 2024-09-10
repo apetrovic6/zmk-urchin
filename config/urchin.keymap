@@ -12,8 +12,9 @@
 
 #define NAV 1
 #define SYM 2
-#define NUMFN 3
-#define UTIL 4
+#define PROG_SYM 3
+#define NUMFN 4
+#define UTIL 5
 
 // Using layer taps on thumbs, having quick tap as well helps w/ repeating space/backspace
 &lt { quick-tap-ms = <200>; };
@@ -26,6 +27,16 @@
             tapping-term-ms = <200>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
+        };
+    };
+
+    macros {
+        LOG_AND: LOG_AND {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp AMPS &kp AMPS>
+                ;
         };
     };
 
@@ -47,6 +58,15 @@
                 &kp EQUAL  &kp APOS  &kp DQT      &kp GRAVE &kp MINUS       &kp BSLH          &kp LPAR         &kp RPAR      &kp LBRC     &kp RBRC
                 &kp TILDE  &trans     &trans   &trans    &trans             &kp PIPE          &kp LBKT         &kp RBKT      &kp LT       &kp GT
                                                   &trans   &trans           &trans          &trans
+            >;
+        };
+
+     prog_sym_layer {
+            bindings = <
+                &trans     &trans     &trans      &trans          &trans       &trans           &LOG_AND         &trans      &trans     &trans
+                &trans     &trans     &trans      &trans          &trans       &trans           &kp LEFT       &kp DOWN    &kp UP   &kp RIGHT
+                &trans     &trans     &trans      &trans          &trans       &trans           &kp HOME       &kp PG_DN   &kp PG_UP  &kp END
+                                                  &trans          &trans       &kp ESC          &kp DEL
             >;
         };
 
