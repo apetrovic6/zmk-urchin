@@ -53,28 +53,28 @@
            bindings
                = <&macro_tap &kp I &kp N &kp C &kp L &kp U &kp D &kp E &kp DQT &kp DQT &kp LEFT>
                ;
-        }
+        };
         ARROW_OP: ARROW_OP {
             compatible = "zmk,behavior-macro";
                    #binding-cells = <0>;
                    bindings
                        = <&macro_tap &kp MINUS &kp GT>
                        ;
-        }
+        };
         DBL_QT: DBL_QT {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
               = <&macro_tap &kp DQT &kp DQT &kp LEFT>
               ;
-        }
+        };
         LSFT_OP: LSFT_OP {
                     compatible = "zmk,behavior-macro";
                     #binding-cells = <0>;
                     bindings
                       = <&macro_tap &kp LT &kp LT>
                       ;
-                }
+                };
     };
 
     keymap {
