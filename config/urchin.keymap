@@ -203,6 +203,24 @@
                               };
     };
 
+/ {
+    combos {
+        compatible = "zmk,combos";
+        c_bps {
+            timeout-ms = <50>;
+            key-positions = <13 14>;
+            bindings = <&kp BSPC>;
+        };
+
+         c_ctrl_bps {
+             timeout-ms = <50>;
+             key-positions = <13 18>;
+             bindings = <&kp LC(BSPC)>;
+         };
+    };
+};
+
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -262,3 +280,5 @@
         };
     };
 };
+
+
