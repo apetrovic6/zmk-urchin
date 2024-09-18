@@ -203,7 +203,6 @@
                               };
     };
 
-/ {
     combos {
         compatible = "zmk,combos";
         c_bps {
@@ -218,8 +217,6 @@
              bindings = <&kp LC(BSPC)>;
          };
     };
-};
-
 
     keymap {
         compatible = "zmk,keymap";
