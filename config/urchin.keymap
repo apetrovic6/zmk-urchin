@@ -78,6 +78,7 @@
               = <&macro_tap &kp DQT &kp DQT &kp LEFT>
               ;
         };
+
         LSFT_OP: LSFT_OP {
                     compatible = "zmk,behavior-macro";
                     #binding-cells = <0>;
@@ -85,6 +86,121 @@
                       = <&macro_tap &kp LT &kp LT>
                       ;
                 };
+
+         RSFT_OP: RSFT_OP {
+                     compatible = "zmk,behavior-macro";
+                     #binding-cells = <0>;
+                     bindings
+                       = <&macro_tap &kp GT &kp GT>
+                       ;
+                 };
+
+    UPROPERTY: UPROPERTY {
+             compatible = "zmk,behavior-macro";
+             #binding-cells = <0>;
+                       bindings
+                       = <&macro_tap &kp U &kp P &kp R &kp O &kp P &kp E &kp R &kp T &kp Y &kp LPAR &kp RPAR &kp LEFT>
+                       ;
+                 };
+
+    UFUNCTION: UFUNCTION {
+             compatible = "zmk,behavior-macro";
+             #binding-cells = <0>;
+                       bindings
+                       = <&macro_tap &kp U &kp F &kp U &kp N &kp C &kp T &kp I &kp O &kp N &kp LPAR &kp RPAR &kp LEFT>
+                       ;
+                 };
+
+        DBL_EQL: DBL_EQL {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+                      bindings
+                      = <&macro_tap &kp EQUAL &kp EQUAL>
+                      ;
+                };
+
+        TRPL_EQL: TRPL_EQL {
+                    compatible = "zmk,behavior-macro";
+                    #binding-cells = <0>;
+                              bindings
+                              = <&macro_tap &kp EQUAL &kp EQUAL &kp EQUAL>
+                              ;
+                        };
+
+        NOT_EQL: NOT_EQL {
+                    compatible = "zmk,behavior-macro";
+                    #binding-cells = <0>;
+                              bindings
+                              = <&macro_tap &kp EXCL &kp EQUAL>
+                              ;
+                        };
+
+
+        GT_EQL: GT_EQL {
+                    compatible = "zmk,behavior-macro";
+                    #binding-cells = <0>;
+                              bindings
+                              = <&macro_tap &kp GT &kp EQUAL>
+                              ;
+                        };
+
+         LT_EQL: LT_EQL {
+                     compatible = "zmk,behavior-macro";
+                     #binding-cells = <0>;
+                               bindings
+                               = <&macro_tap &kp LT &kp EQUAL>
+                               ;
+                         };
+
+
+         PRN: PRN {
+                     compatible = "zmk,behavior-macro";
+                     #binding-cells = <0>;
+                               bindings
+                               = <&macro_tap &kp LPAR &kp RPAR &kp LEFT>
+                               ;
+                         };
+
+          BRC: BRC {
+                      compatible = "zmk,behavior-macro";
+                      #binding-cells = <0>;
+                                bindings
+                                = <&macro_tap &kp LBRC &kp RBRC &kp LEFT>
+                                ;
+                          };
+
+           BKT: BKT {
+                       compatible = "zmk,behavior-macro";
+                       #binding-cells = <0>;
+                                 bindings
+                                 = <&macro_tap &kp LBKT &kp RBKT &kp LEFT>
+                                 ;
+                           };
+
+            ANGL: ANGL {
+                        compatible = "zmk,behavior-macro";
+                        #binding-cells = <0>;
+                                  bindings
+                                  = <&macro_tap &kp LT &kp GT &kp LEFT>
+                                  ;
+                            };
+
+             INC: INC {
+                         compatible = "zmk,behavior-macro";
+                         #binding-cells = <0>;
+                                   bindings
+                                   = <&macro_tap &kp PLUS &kp PLUS>
+                                   ;
+                             };
+
+
+              DEC: DEC {
+                          compatible = "zmk,behavior-macro";
+                          #binding-cells = <0>;
+                                    bindings
+                                    = <&macro_tap &kp MINUS &kp MINUS>
+                                    ;
+                              };
     };
 
     keymap {
@@ -110,9 +226,9 @@
 
      prog_sym_layer {
             bindings = <
-                &trans     &trans     &trans      &trans          &trans       &trans           &LOG_AND         &LOG_OR      &INCLUDE   &trans
-                &trans     &trans     &trans      &trans          &trans       &trans           &ARROW_OP        &ARROW_FN    &DBL_QT   &trans
-                &trans     &trans     &trans      &trans          &trans       &trans           &LSFT_OP         &trans       &trans   &trans
+                &DBL_EQL   &TRPL_EQL  &NOT_EQL    &GT_EQL          &trans       &trans           &LOG_AND         &LOG_OR      &INCLUDE   &trans
+                &PRN       &BRC     &BKT      &ANGL          &trans       &trans           &ARROW_OP        &ARROW_FN    &DBL_QT   &trans
+                &DEC     &INC     &trans      &trans          &trans       &trans           &LSFT_OP         &RSFT_OP       &UPROPERTY   &UFUNCTION
                                                   &trans          &trans       &trans           &trans
             >;
         };
