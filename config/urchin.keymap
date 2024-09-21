@@ -237,7 +237,7 @@
             bindings = <
                 &kp Y      &kp C      &kp L       &kp M          &kp K         &kp Z            &kp F          &kp U       &kp COMMA      &kp APOS
                 &hm LGUI I &hm LALT S &hm LSHFT R &hm LCTRL T    &kp G         &kp P            &hm RCTRL N    &hm RSHFT E &hm LALT A &hm RGUI O
-                &kp Q      &kp V      &kp W       &kp D          &kp J         &kp B            &kp  H         &kp SLASH   &kp DOT    &kp X
+                &mt LC(Z) Q      &mt LC(X) V      &mt LC(C) W       &mt LC(V) D          &kp J         &kp B            &kp  H         &kp SLASH   &kp DOT    &kp X
                                                   &lt SYM TAB  &lt NUMFN ENTER     &lt NAV SPACE  &lt UTIL ESC
             >;
         };
