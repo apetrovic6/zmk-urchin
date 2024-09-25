@@ -244,6 +244,8 @@
         compatible = "zmk,keymap";
 
         default_layer {
+       display-name = "Alpha"
+
             bindings = <
                 &kp Y        &kp C         &kp L         &kp M          &kp K         &kp Z            &kp F          &kp U       &kp COMMA      &kp APOS
                 &hm LGUI I   &hm LALT S    &hm LSHFT R   &hm LCTRL T    &kp G         &kp P            &hm RCTRL N    &hm RSHFT E &hm LALT A &hm RGUI O
@@ -253,6 +255,7 @@
         };
 
         nav_layer {
+       display-name = "Nav"
             bindings = <
                 &trans     &trans     &trans      &trans          &trans       &trans           &trans         &trans      &trans     &trans
           &kp LC(LS(TAB))  &trans     &trans      &trans      &kp LC(TAB)      &trans           &kp LEFT       &kp DOWN    &kp UP   &kp RIGHT
@@ -262,6 +265,7 @@
         };
 
         sym_layer {
+       display-name = "Sym"
             bindings = <
                 &kp AT   &kp HASH     &kp DLLR    &kp PRCNT &kp UNDER       &kp CARET         &kp AMPS         &kp STAR      &kp COLON    &kp SEMI
                 &kp EQUAL  &kp APOS  &kp DQT      &kp GRAVE &kp MINUS       &kp BSLH          &kp LPAR         &kp RPAR      &kp LBRC     &kp RBRC
@@ -271,6 +275,7 @@
         };
 
      prog_sym_layer {
+       display-name = "Prog Sym"
             bindings = <
                 &DBL_EQL   &TRPL_EQL  &NOT_EQL    &GT_EQL          &trans       &trans           &LOG_AND         &LOG_OR      &INCLUDE   &trans
                 &PRN       &BRC     &BKT      &ANGL          &trans       &trans           &ARROW_OP        &ARROW_FN    &DBL_QT   &trans
@@ -282,6 +287,7 @@
 
 
         numfn_layer {
+       display-name = "Num/FN"
             bindings = <
                 &kp F9     &kp F10    &kp F11     &kp F12          &trans     &trans  &kp N7           &kp N8         &kp N9      &trans
                 &kp F5     &kp F6     &kp F7      &kp F8          &trans     &trans    &kp N4           &kp N5         &kp N6   &trans
@@ -292,6 +298,7 @@
 
 
         util_layer {
+       display-name = "Util"
             bindings = <
                  &trans     &trans     &trans      &trans          &trans       &trans           &trans         &trans      &trans     &trans
                  &trans     &trans     &trans      &trans          &trans       &trans           &trans         &trans      &trans     &trans
