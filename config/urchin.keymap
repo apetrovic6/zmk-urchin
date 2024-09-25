@@ -30,7 +30,7 @@
             bindings = <&kp>, <&kp>;
         };
 
-           onl : require_prior_idle {
+           onl: require_prior_idle {
                 compatible = "zmk,behavior-hold-tap";
                 #binding-cells = <2>;
                 flavor = "tap-preferred";
