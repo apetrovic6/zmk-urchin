@@ -36,7 +36,7 @@
                  #binding-cells = <2>;
                  flavor = "hold-preferred";
                  tapping-term-ms = <200>;
-                 bindings =  <&sl, <&kp>;
+                 bindings =  <&sl>, <&kp>;
              };
     };
 
@@ -258,7 +258,7 @@
        display-name = "Nav"
             bindings = <
                 &trans     &trans     &trans      &trans          &trans       &trans           &trans         &trans      &trans     &trans
-          &kp LC(LS(TAB))  &trans     &trans      &trans      &kp LC(TAB)      &trans           &kp LEFT       &kp DOWN    &kp UP   &kp RIGHT
+          &kp LC(LS(TAB))  &trans     &trans      &kp LC(TAB)     &trans           &trans           &kp LEFT       &kp DOWN    &kp UP   &kp RIGHT
                 &trans     &trans     &trans      &trans          &trans       &trans           &kp HOME       &kp PG_DN   &kp PG_UP  &kp END
                                                   &trans          &trans       &trans          &trans
             >;
