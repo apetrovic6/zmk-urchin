@@ -30,7 +30,7 @@
             bindings = <&kp>, <&kp>;
         };
 
-      kp_sl: behavior_mo_sl {
+      kp_sl: behavior_kp_sl {
                  compatible = "zmk,behavior-hold-tap";
                  label = "mo_sl";
                  #binding-cells = <2>;
