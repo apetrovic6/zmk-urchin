@@ -16,6 +16,7 @@
 #define PROG_SYM 3
 #define NUMFN 4
 #define UTIL 5
+#define SETTINGS 6
 
 // Using layer taps on thumbs, having quick tap as well helps w/ repeating space/backspace
 
@@ -216,6 +217,14 @@
         };
     };
 
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+        tri_layer {
+            if-layers = <NAV NUMFN>;
+            then-layer = <SETTINGS>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -280,6 +289,7 @@
         };
 
         Settings {
+            display-name = "Settings";
             bindings = <
   &bt BT_SEL 0  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &kp K_SLEEP
   &trans        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
