@@ -220,8 +220,8 @@
     conditional_layers {
         compatible = "zmk,conditional-layers";
         tri_layer {
-            if-layers = <NAV NUMFN>;
-            then-layer = <SETTINGS>;
+            if-layers = <1 4>;
+            then-layer = <6>;
         };
     };
 
@@ -283,7 +283,9 @@
             bindings = <
   &studio_unlock  &trans         &trans   &trans  &trans    &trans  &trans  &trans  &trans  &trans
   &trans          &trans         &trans   &trans  &trans    &trans  &trans  &trans  &trans  &trans
-  &trans          &kp LG(LS(S))  &kp DEL  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+  &trans          &kp LG(LS(S))  &kp DEL  &trans  &trans    &trans  &trans  &trans  &trans  &trans00
+
+    00000
                                  &trans   &trans                    &trans  &trans
             >;
         };
