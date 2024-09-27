@@ -211,15 +211,16 @@
         };
 
         c_prog_sym {
-             timeout-ms = <50>;
-             key-positions = <26 27>;
-             bindings = <&sl PROG_SYM>;
+            timeout-ms = <50>;
+            key-positions = <26 27>;
+            bindings = <&sl PROG_SYM>;
         };
     };
 
     conditional_layers {
         compatible = "zmk,conditional-layers";
-        tri_layer {
+
+        settings_trigger {
             if-layers = <1 4>;
             then-layer = <6>;
         };
@@ -283,9 +284,7 @@
             bindings = <
   &studio_unlock  &trans         &trans   &trans  &trans    &trans  &trans  &trans  &trans  &trans
   &trans          &trans         &trans   &trans  &trans    &trans  &trans  &trans  &trans  &trans
-  &trans          &kp LG(LS(S))  &kp DEL  &trans  &trans    &trans  &trans  &trans  &trans  &trans00
-
-    00000
+  &trans          &kp LG(LS(S))  &kp DEL  &trans  &trans    &trans  &trans  &trans  &trans  &trans00 00000
                                  &trans   &trans                    &trans  &trans
             >;
         };
