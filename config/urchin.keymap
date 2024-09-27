@@ -283,9 +283,7 @@
             bindings = <
   &studio_unlock  &trans         &trans   &trans  &trans    &trans  &trans  &trans  &trans  &trans
   &trans          &trans         &trans   &trans  &trans    &trans  &trans  &trans  &trans  &trans
-  &trans          &kp LG(LS(S))  &kp DEL  &trans  &trans    &trans  &trans  &trans  &trans  &trans00
-
-    00000
+  &trans          &kp LG(LS(S))  &kp DEL  &trans  &trans    &trans  &trans  &trans  &trans  &trans
                                  &trans   &trans                    &trans  &trans
             >;
         };
