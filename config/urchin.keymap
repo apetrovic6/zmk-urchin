@@ -182,42 +182,6 @@
             #binding-cells = <0>;
             bindings = <&macro_tap>, <&kp MINUS &kp MINUS>;
         };
-
-        omega_test: omega_test {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_tap>,
-                <&kp KP_NUMLOCK>,
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_N2 &kp KP_N3 &kp KP_NUMBER_4>,
-                <&macro_release>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_NUMLOCK>;
-
-            label = "OMEGA_TEST";
-        };
-
-        ch: ch {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_tap>,
-                <&kp KP_NUMLOCK>,
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_NUMBER_0 &kp KP_N2 &kp KP_NUMBER_6 &kp KP_NUMBER_2>,
-                <&macro_release>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_NUMLOCK>;
-
-            label = "CH";
-        };
     };
 
     combos {
@@ -324,8 +288,8 @@
         util_layer {
             display-name = "Util";
             bindings = <
-  &studio_unlock  &omega_test    &kp KP_NUMLOCK  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-  &trans          &ch            &trans          &trans  &trans    &trans  &trans  &trans  &trans  &trans
+  &studio_unlock  &trans         &kp KP_NUMLOCK  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+  &trans          &trans         &trans          &trans  &trans    &trans  &trans  &trans  &trans  &trans
   &trans          &kp LG(LS(S))  &kp DEL         &trans  &trans    &trans  &trans  &trans  &trans  &trans
                                  &trans          &trans                    &trans  &trans
             >;
