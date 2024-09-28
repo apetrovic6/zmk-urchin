@@ -182,6 +182,24 @@
             #binding-cells = <0>;
             bindings = <&macro_tap>, <&kp MINUS &kp MINUS>;
         };
+
+        omega_test: omega_test {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap>,
+                <&kp KP_NUMLOCK>,
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_N2 &kp KP_N3 &kp KP_N4>,
+                <&macro_release>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_NUMLOCK>;
+
+            label = "OMEGA_TEST";
+        };
     };
 
     combos {
@@ -288,7 +306,7 @@
         util_layer {
             display-name = "Util";
             bindings = <
-  &studio_unlock  &trans         &trans   &trans  &trans    &trans  &trans  &trans  &trans  &trans
+  &studio_unlock  &omega_test    &trans   &trans  &trans    &trans  &trans  &trans  &trans  &trans
   &trans          &trans         &trans   &trans  &trans    &trans  &trans  &trans  &trans  &trans
   &trans          &kp LG(LS(S))  &kp DEL  &trans  &trans    &trans  &trans  &trans  &trans  &trans
                                  &trans   &trans                    &trans  &trans
