@@ -6,7 +6,7 @@
 
 #include <dt-bindings/zmk/keys.h>
 
-   macros {
+/   macros {
         LOG_AND: LOG_AND {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
