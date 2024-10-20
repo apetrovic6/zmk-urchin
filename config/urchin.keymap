@@ -65,6 +65,11 @@
             bindings = <&kp Q>;
             key-positions = <1 2>;
         };
+
+        KP_TAB {
+            bindings = <&kp TAB>;
+            key-positions = <26 27>;
+        };
     };
 
     keymap {
