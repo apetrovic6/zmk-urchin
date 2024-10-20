@@ -68,7 +68,7 @@
 
         KP_TAB {
             bindings = <&kp TAB>;
-            key-positions = <26 27>;
+            key-positions = <22 23>;
         };
     };
 
