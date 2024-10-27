@@ -6,14 +6,12 @@
 
 #undef ZMK_BEHAVIORS_KEEP_ALL
 
-#include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/keys.h>
 #include "layers.conf"
 #include "macros.conf"
 #include "combos.conf"
-
-
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
 
 // Using layer taps on thumbs, having quick tap as well helps w/ repeating space/backspace
 
@@ -61,10 +59,10 @@
         default_layer {
             display-name = "Alpha";
             bindings = <
-  &kp Y        &kp C        &kp L        &kp M            &kp K    &kp Z  &kp F          &kp U            &ht MINUS COMMA  &kp APOS
-  &hm LGUI I   &hm LALT S   &hm LSHFT R  &hm LCTRL T      &kp G    &kp P  &hm RCTRL N    &hm RSHFT E      &hm LALT A       &hm RGUI O
-  &mt LC(Z) Q  &mt LC(X) V  &mt LC(C) W  &mt LC(V) D      &kp J    &kp B  &kp H          &ht UNDER SLASH  &ht EXCL DOT     &kp X
-                            &lt SYM TAB  &lt NUMFN ENTER                  &lt NAV SPACE  &lt UTIL ESC
+  &kp W        &kp F        &kp M        &kp P            &kp V    &ht UNDER COMMA  &ht EXCL DOT   &kp Q         &ht MINUS SQT  &kp Z
+  &hm LGUI R   &hm LALT S   &hm LSHFT N  &hm LCTRL T      &kp B    &kp A            &hm RCTRL E    &hm RSHFT I   &hm LALT H     &hm RGUI J
+  &mt LC(Z) X  &mt LC(X) C  &mt LC(C) L  &mt LC(V) D      &kp G    &ht SLASH QMARK  &kp U          &kp O         &kp Y          &kp K
+                            &lt SYM TAB  &lt NUMFN ENTER                            &lt NAV SPACE  &lt UTIL ESC
             >;
         };
 
@@ -134,6 +132,16 @@
   &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
   &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
                   &trans  &trans                    &trans  &trans
+            >;
+        };
+
+        layer_8 {
+            display-name = "Alpha";
+            bindings = <
+  &kp W        &kp F        &kp M        &kp P            &kp V    &ht UNDER COMMA  &ht EXCL DOT   &kp Q         &ht MINUS SQT  &kp Z
+  &hm LGUI R   &hm LALT S   &hm LSHFT N  &hm LCTRL T      &kp B    &kp A            &hm RCTRL E    &hm RSHFT I   &hm LALT H     &hm RGUI J
+  &mt LC(Z) X  &mt LC(X) C  &mt LC(C) L  &mt LC(V) D      &kp G    &ht SLASH QMARK  &kp U          &kp O         &kp Y          &kp K
+                            &lt SYM TAB  &lt NUMFN ENTER                            &lt NAV SPACE  &lt UTIL ESC
             >;
         };
     };
