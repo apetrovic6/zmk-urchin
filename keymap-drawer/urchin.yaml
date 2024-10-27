@@ -1,0 +1,295 @@
+layout: {qmk_keyboard: ferris_rotated}
+layers:
+  Alpha:
+  - W
+  - F
+  - M
+  - P
+  - V
+  - {t: ',', h: _}
+  - {t: ., h: '!'}
+  - Q
+  - {t: '''', h: '-'}
+  - Z
+  - {t: R, h: LGUI}
+  - {t: S, h: LALT}
+  - {t: N, h: LSHFT}
+  - {t: T, h: LCTRL}
+  - B
+  - A
+  - {t: E, h: RCTRL}
+  - {t: I, h: RSHFT}
+  - {t: H, h: LALT}
+  - {t: J, h: RGUI}
+  - {t: X, h: Ctl+ Z}
+  - {t: C, h: Ctl+ X}
+  - {t: L, h: Ctl+ C}
+  - {t: D, h: Ctl+ V}
+  - G
+  - {t: '?', h: /}
+  - U
+  - O
+  - Y
+  - K
+  - {t: TAB, h: Sym}
+  - {t: ENTER, h: Num/FN}
+  - {t: SPACE, h: Nav}
+  - {t: ESC, h: Util}
+  Nav:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Ctl+Sft+ TAB
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Ctl+ TAB
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - LEFT
+  - DOWN
+  - UP
+  - RIGHT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - HOME
+  - PG DN
+  - PG UP
+  - END
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  Sym:
+  - '@'
+  - '#'
+  - $
+  - '%'
+  - _
+  - ^
+  - '&'
+  - '*'
+  - ':'
+  - ;
+  - '='
+  - ''''
+  - '"'
+  - '`'
+  - '-'
+  - \
+  - (
+  - )
+  - '{'
+  - '}'
+  - '~'
+  - ''
+  - ''
+  - ''
+  - ''
+  - '|'
+  - '['
+  - ']'
+  - <
+  - '>'
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  Prog Sym:
+  - '&DBL_EQL'
+  - '&TRPL_EQL'
+  - '&NOT_EQL'
+  - '&GT_EQL'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&LOG_AND'
+  - '&LOG_OR'
+  - '&INCLUDE'
+  - {t: ▽, type: trans}
+  - '&PRN'
+  - '&BRC'
+  - '&BKT'
+  - '&ANGL'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&ARROW_OP'
+  - '&ARROW_FN'
+  - '&DBL_QT'
+  - {t: ▽, type: trans}
+  - '&DEC'
+  - '&INC'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: '&LSFT_OP', type: held}
+  - {t: '&RSFT_OP', type: held}
+  - '&UPROPERTY'
+  - '&UFUNCTION'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  Num/FN:
+  - F9
+  - F10
+  - F11
+  - F12
+  - {t: ▽, type: trans}
+  - /
+  - '7'
+  - '8'
+  - '9'
+  - '-'
+  - F5
+  - F6
+  - F7
+  - F8
+  - {t: ▽, type: trans}
+  - '*'
+  - '4'
+  - '5'
+  - '6'
+  - +
+  - F1
+  - F2
+  - F3
+  - F4
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '1'
+  - '2'
+  - '3'
+  - '='
+  - {t: ▽, type: trans}
+  - {type: held}
+  - '0'
+  - {t: ▽, type: trans}
+  Util:
+  - '&studio_unlock'
+  - {t: ▽, type: trans}
+  - KP NUMLOCK
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Gui+Sft+ S
+  - DEL
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  Settings:
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
+  - {t: BT, h: '4'}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - SLEEP
+  - SLEEP MODE
+  - SLEEP
+  - '&bootloader'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - BT CLR ALL
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - BT CLR
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&soft_off'
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {type: held}
+  - {t: ▽, type: trans}
+  '7':
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+combos:
+- p: [12, 13]
+  k: BSPC
+- p: [16, 17]
+  k: Ctl+ BSPC
+- p: [27, 28]
+  k: ':'
+- p: [28, 29]
+  k: ;
+- p: [26, 27]
+  k: {t: Prog Sym, h: sticky}
+- p: [12, 17]
+  k: '&caps_word'
