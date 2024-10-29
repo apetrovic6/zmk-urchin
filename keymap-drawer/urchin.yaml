@@ -293,3 +293,9 @@ combos:
   k: {t: Prog Sym, h: sticky}
 - p: [12, 17]
   k: '&caps_word'
+- p: [0, 1]
+  k: Z
+- p: [1, 2]
+  k: Q
+- p: [22, 23]
+  k: TAB
