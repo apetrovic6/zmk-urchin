@@ -78,10 +78,10 @@
         default_layer {
             display-name = "Alpha";
             bindings = <
-  &kp J        &kp G        &kp M        &kp P            &kp V    &ht COLON SEMICOLON  &ht AMPERSAND PERIOD  &ht ASTERISK SLASH  &ht QUESTION DQT  &ht EXCLAMATION SQT
-  &hm LGUI R   &hm LALT S   &hm LSHFT N  &hm LCTRL D      &kp B    &ht PIPE COMMA       &hm RCTRL A           &hm RSHFT E         &hm LALT I        &hm RGUI H
-  &mt LC(Z) X  &mt LC(X) F  &mt LC(C) L  &mt LC(V) C      &kp W    &ht PLUS MINUS       &kp U                 &kp O               &kp Y             &kp K
-                            &lt SYM T    &lt NUMFN ENTER                                &lt NAV SPACE         &lt UTIL ESC
+  &kp V        &kp W        &kp G        &kp M            &kp J    &ht COLON SEMICOLON  &ht AMPERSAND PERIOD  &ht DOUBLE_QUOTES SINGLE_QUOTE  &ht QUESTION SLASH  &ht EXCLAMATION EQUAL
+  &hm LGUI S   &hm LALT N   &hm LSHFT T  &hm LCTRL H      &kp K    &ht PIPE COMMA       &hm RCTRL A           &hm RSHFT E                     &hm LALT I          &hm RGUI C
+  &mt LC(Z) F  &mt LC(X) P  &mt LC(C) D  &mt LC(V) C      &kp X    &ht PLUS MINUS       &kp U                 &kp O                           &kp Y               &kp B
+                            &lt SYM R    &lt NUMFN ENTER                                &lt NAV SPACE         &lt UTIL ESC
             >;
         };
 
