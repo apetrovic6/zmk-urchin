@@ -1,4 +1,4 @@
-layout: {qmk_keyboard: ferris_rotated}
+layout: {zmk_keyboard: urchin}
 layers:
   Alpha:
   - W
@@ -21,10 +21,10 @@ layers:
   - {t: I, h: RSHFT}
   - {t: H, h: LALT}
   - {t: J, h: RGUI}
-  - {t: X, h: Ctl+ Z}
-  - {t: C, h: Ctl+ X}
-  - {t: L, h: Ctl+ C}
-  - {t: D, h: Ctl+ V}
+  - {t: X, h: Ctl+Z}
+  - {t: C, h: Ctl+X}
+  - {t: L, h: Ctl+C}
+  - {t: D, h: Ctl+V}
   - G
   - {t: '?', h: /}
   - U
@@ -46,10 +46,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Ctl+Sft+ TAB
+  - Ctl+Sft+TAB
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Ctl+ TAB
+  - Ctl+TAB
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - LEFT
@@ -197,7 +197,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Gui+Sft+ S
+  - Gui+Sft+S
   - DEL
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -284,7 +284,7 @@ combos:
 - p: [12, 13]
   k: BSPC
 - p: [16, 17]
-  k: Ctl+ BSPC
+  k: Ctl+BSPC
 - p: [27, 28]
   k: ':'
 - p: [28, 29]
